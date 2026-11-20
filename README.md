@@ -1,7 +1,7 @@
-# Слой DAO с Hibernate
+# Spring Data JPA
 
-Приложение ищет пользователей по городу через `EntityManager`.
+REST API для работы с пользователями через Spring Data JPA. Миграции Flyway создают таблицу и добавляют начальные данные.
 
 Запустите PostgreSQL командой `docker compose up -d`, затем приложение командой `mvn spring-boot:run`.
 
-Пример запроса: `GET http://localhost:8080/persons/by-city?city=Moscow`
+Доступны поиск по городу, фильтрация по возрасту, поиск по имени и фамилии, а также CRUD-операции по адресу `/persons`.
